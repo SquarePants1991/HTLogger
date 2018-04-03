@@ -1,0 +1,6 @@
+framework module HTLogger {
+  umbrella header "HTLogger-umbrella.h"
+
+  export *
+  module * { export * }
+}

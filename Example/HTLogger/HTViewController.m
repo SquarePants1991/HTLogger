@@ -7,6 +7,8 @@
 //
 
 #import "HTViewController.h"
+#import "HTLogger/HTLogger.h"
+#import "HTLogger/HTLoggerShareFetcher.h"
 
 @interface HTViewController ()
 
@@ -17,13 +19,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    HTLogError(@"Hello %@", @"world");
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(nullable UIEvent *)event {
+    NSArray *logFiles = [[HTLogger defaultLogger] logFiles];
+    HTLogInfo(@"log files: %@", logFiles);
+}
+
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+- (void)motionEnded:(UIEventSubtype)motion withEvent:(nullable UIEvent *)event {
+    if (motion == UIEventSubtypeMotionShake) {
+        [HTLoggerShareFetcher fetchLogArchive];
+    }
 }
 
 @end

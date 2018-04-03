@@ -1,0 +1,27 @@
+{
+  "name": "HTLogger",
+  "version": "0.1.0",
+  "summary": "A short description of HTLogger.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/squarepants1991/HTLogger",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "squarepants1991": "tomcat1991@126.com"
+  },
+  "source": {
+    "git": "https://github.com/squarepants1991/HTLogger.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "HTLogger/Classes/**/*",
+  "dependencies": {
+    "CocoaLumberjack": [
+
+    ]
+  }
+}

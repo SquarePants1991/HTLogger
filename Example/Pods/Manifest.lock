@@ -1,0 +1,30 @@
+PODS:
+  - CocoaLumberjack (3.4.1):
+    - CocoaLumberjack/Default (= 3.4.1)
+    - CocoaLumberjack/Extensions (= 3.4.1)
+  - CocoaLumberjack/Default (3.4.1)
+  - CocoaLumberjack/Extensions (3.4.1):
+    - CocoaLumberjack/Default
+  - Expecta (1.0.6)
+  - HTLogger (0.1.0):
+    - CocoaLumberjack
+  - Specta (1.0.7)
+
+DEPENDENCIES:
+  - Expecta
+  - HTLogger (from `../`)
+  - Specta
+
+EXTERNAL SOURCES:
+  HTLogger:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 2e258a064cacc8eb9a2aca318e24d02a0a7fd56d
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  HTLogger: 12142b42c17b51077371e331c398df6adc3dc1af
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+
+PODFILE CHECKSUM: f42e733e5f629d68f5c1332084540274b51bfaf6
+
+COCOAPODS: 1.3.1
